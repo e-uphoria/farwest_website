@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <!-- **** CSS ****-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <h1 class="logo">ADVENTURE</h1>
+       <ul class="nav-links">
+        <li ><a href="#" class="home-link">Home</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">About</a></li>
+        <li class="ctn"><a href="#">Contact</a></li>
+       </ul>
+       <img src="./menu-btn.png" alt="menu button" class="menu-btn">
+    </nav>
+    <header>
+      <div class="header-content">
+        <h2>EXPLORE <span class="underline">SUDURPASCHIM</span>: </h2>
+        <h1>WHERE NATURE MEETS ADVENTURE!</h1>
+        <a href="#" class="ctn">Learn More</a>
+      </div>  
+    </header>
+
+    <!-- Events -->
+<section class="events">
+  <div class="title">
+    <h1>Popular Destinations</h1>
+  
+  <!-- Row 1 with image 11.jpg and description -->
+  <div class="row">
+    <div class="col">
+      <img src="./11.jpg" alt="Shuklaphanta National Park">
+      <h3>Shuklaphanta National Park</h3>
+      <p>Shuklaphanta National Park, nestled in the lush lowlands of Sudurpaschim, Nepal, is a wildlife haven known for its vast grasslands and rich biodiversity. Home to the largest herd of swamp deer in the world, the park offers a unique experience for nature lovers and wildlife enthusiasts.</p>
+      <a href="#" class="learn-more-btn">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Row 2 with image 55.jpg and description -->
+  <div class="row">
+    <div class="col">
+      <img src="./55.jpg" alt="Badimalika">
+      <h3>Badimalika</h3>
+      <p>Perched atop a high-altitude hill, the Badimalika Temple offers stunning panoramic views of the Himalayas, lush meadows, and peaceful landscapes. The trek to this spiritual haven is an adventure in itself, winding through pristine forests, vibrant rhododendron blooms, and charming local villages.</p>
+      <a href="#" class="learn-more-btn">Learn More</a>
+    </div>
+  </div>
+</section>
+
+ <!-- Image Gallery -->
+ <section class="gallery">
+  <div class="title">
+    <h2>Gallery</h2>
+  <div class="gallery-row">
+      <img src="./10.jpg" alt="Shuklaphanta" class="gallery-item" onclick="openModal();currentSlide(1)">
+      <img src="./66.jpg" alt="Khaptad" class="gallery-item" onclick="openModal();currentSlide(2)">
+      <img src="./77.jpg" alt="Api Himal" class="gallery-item" onclick="openModal();currentSlide(3)">
+      <img src="./88.jpg" alt="BudhiNanda" class="gallery-item" onclick="openModal();currentSlide(4)">
+      <img src="./99.jpg" alt="GhodaGhodhiTal" class="gallery-item" onclick="openModal();currentSlide(5)">
+      <img src="./100.png" alt="GauraParva" class="gallery-item" onclick="openModal();currentSlide(6)">
+      <img src="./32.jpg" alt="Deuda" class="gallery-item" onclick="openModal();currentSlide(7)">
+      <img src="./31.jpg" alt="Dodhara" class="gallery-item" onclick="openModal();currentSlide(8)">
+  </div>
+  </div>
+ </section>
+
+ <section class="footer">
+  <p> Budhanilkantha, Kathmandu, Nepal | Phone: 98******** | Email: farwest@example.com</p>
+ </section>
+
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const navlinks = document.querySelector('.nav-links');
+
+  menuBtn.addEventListener("click", () => {
+      navlinks.classList.toggle('mobile-menu'); // Toggle the mobile-menu class
+  });
+</script>
+    
+</body>
+</html>
